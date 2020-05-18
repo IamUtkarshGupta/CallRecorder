@@ -188,11 +188,11 @@ public class RecordService extends Service {
             recorder.setAudioSource(MediaRecorder.AudioSource.VOICE_COMMUNICATION);
           //  recorder.setAudioSamplingRate(8000);
           //  recorder.setAudioEncodingBitRate(12200);
-            recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+            recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
             recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
             ++count;
             String path=recordInitiaizer.getPath();
-            String rec=path+"/"+recordInitiaizer.getTIme()+".3gp";
+            String rec=path+"/"+recordInitiaizer.getTIme()+".mp4";
             Log.d("ss",rec);
             //  String fileName = audiofile.getAbsolutePath();
             recorder.setOutputFile(rec);
